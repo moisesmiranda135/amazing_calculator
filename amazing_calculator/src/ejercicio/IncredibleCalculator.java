@@ -2,9 +2,13 @@ package ejercicio;
 
 import java.util.Scanner;
 
+import utilidades.Leer;
+
 public class IncredibleCalculator {
 
     public static void main(String[] args) {
+    	
+    	double n1,n2,resultado;
 
         System.out.println("Selecciona la operación que prefieras realizar: ");
         System.out.println("1. Sumar");
@@ -17,15 +21,46 @@ public class IncredibleCalculator {
 
 
         switch (opcion) {
-            case 1: //Sumar. Debes leer dos numeros enteros de entrada e imprimir su suma
+            case 1: 
+            		System.out.println("Escibe el número 1:");
+            		n1=Leer.datoDouble();
+            		System.out.println("Escibe el número 2:");
+            		n2=Leer.datoDouble();
+            		resultado=n1+n2;
+            		System.out.printf("El resultado es: %.2f",resultado);
                     break;
-            case 2: // Restar. Debes leer dos números enteros de entrada e imprimir su resta
+            case 2: 
+            		System.out.println("Escibe el número 1:");
+            		n1=Leer.datoDouble();
+            		System.out.println("Escibe el número 2:");
+            		n2=Leer.datoDouble();
+            		resultado=n1-n2;
+            		System.out.printf("El resultado es: %.2f",resultado);
                     break;
-            case 3: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su producto.
+            case 3: 
+            		System.out.println("Escibe el número 1:");
+    				n1=Leer.datoDouble();
+    				System.out.println("Escibe el número 2:");
+		    		n2=Leer.datoDouble();
+		    		resultado=n1*n2;
+		    		System.out.println("El resultado es: " + resultado);
                     break;
-            case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división entera.
-                    break;
-            case 5: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división con decimales.
+            case 4:
+            		System.out.println("Escibe el número 1:");
+					n1=Leer.datoDouble();
+					System.out.println("Escibe el número 2:");
+		    		n2=Leer.datoDouble();
+		    		resultado=n1/n2;
+		    		System.out.println("El resultado es: " + resultado);
+		    		break;
+                    
+            case 5: 
+	            	System.out.println("Escibe el número 1:");
+					n1=Leer.datoDouble();
+					System.out.println("Escibe el número 2:");
+		    		n2=Leer.datoDouble();
+		    		resultado=n1/n2;
+		    		System.out.printf("El resultado es: %.2f",resultado);
                     break;
 
         }
